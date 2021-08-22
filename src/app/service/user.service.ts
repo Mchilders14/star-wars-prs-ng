@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { User } from '../model/user.class';
 
-const URL: string='https://starwarsprs.azurewebsites.net/api/users';
+const URL: string='https://starwarsprsback.azurewebsites.net/api/users';
 
 @Injectable({
   providedIn: 'root'
