@@ -35,5 +35,5 @@ jobs:
         app-name: starwarsprs
         slot-name: Production
         publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_16D3BE50322F44C691AF28D33011282C }}
-        package: .
+        package: ./dist/prs-ng
 
