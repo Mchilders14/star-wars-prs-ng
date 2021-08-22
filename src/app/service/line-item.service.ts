@@ -3,7 +3,7 @@ import { Injectable } from "@angular/core";
 import { Observable } from "rxjs";
 import { LineItem } from "../model/line-item.class";
 
-const URL: string='https://starwarsprsback.azurewebsites.net/api/line-items';
+const URL: string='https://starwarsprsback.azurewebsites.net/api/lineitems';
 
 @Injectable({
     providedIn: 'root'
