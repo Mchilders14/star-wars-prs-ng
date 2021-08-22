@@ -3,7 +3,7 @@ import { Injectable } from "@angular/core";
 import { Observable } from "rxjs";
 import { Product } from "../model/product.class";
 
-const URL: string='http://localhost:8080/api/products';
+const URL: string='https://starwarsprs.azurewebsites.net0/api/products';
 
 @Injectable({
   providedIn: 'root'

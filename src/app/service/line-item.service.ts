@@ -7,7 +7,7 @@ import { LineItem } from "../model/line-item.class";
 
 
 
-const URL: string='http://localhost:8080/api/line-items';
+const URL: string='https://starwarsprs.azurewebsites.net/api/line-items';
 
 @Injectable({
     providedIn: 'root'
