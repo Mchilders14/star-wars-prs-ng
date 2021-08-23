@@ -22,9 +22,11 @@ import { VendorDetailComponent } from './feature/vendor/vendor-detail/vendor-det
 import { VendorEditComponent } from './feature/vendor/vendor-edit/vendor-edit.component';
 import { VendorListComponent } from './feature/vendor/vendor-list/vendor-list.component';
 import { RequestApproveComponent } from './feature/request/request-approve/request-approve.component';
+import { HomePageComponent } from './feature/home/home-page/home-page.component';
 
 const routes: Routes = [
-  { path: '', redirectTo:'/user-login', pathMatch: 'full' },
+  { path: '', redirectTo:'/home-page', pathMatch: 'full' },
+  { path: 'home-page', component: HomePageComponent },
   { path: 'user-list', component: UserListComponent },
   { path: 'user-create', component: UserCreateComponent },
   { path: 'user-login', component: UserLoginComponent },

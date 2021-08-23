@@ -33,7 +33,7 @@ export class UserLoginComponent implements OnInit {
         else {
           this.user = resp as User;
           this.sysSvc.loggedInUser = this.user;
-          this.router.navigateByUrl("/request-list");
+          this.router.navigateByUrl("/home-page");
         }
       },
       err => {

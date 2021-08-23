@@ -29,6 +29,7 @@ import { RequestLinesComponent } from './feature/request/request-lines/request-l
 import { RequestApproveComponent } from './feature/request/request-approve/request-approve.component';
 import { RequestReviewComponent } from './feature/request/request-review/request-review.component';
 import { SortPipe } from './pipe/sort.pipe';
+import { HomePageComponent } from './feature/home/home-page/home-page.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +57,8 @@ import { SortPipe } from './pipe/sort.pipe';
     RequestLinesComponent,
     RequestApproveComponent,
     RequestReviewComponent,
-    SortPipe
+    SortPipe,
+    HomePageComponent
   ],
   imports: [
     BrowserModule,
