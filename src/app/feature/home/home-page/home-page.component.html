@@ -1,5 +1,17 @@
 <app-menu style="position: fixed; top: 0; width: 100%;"></app-menu>
-<div style="height: 870px; background-color: black;">
+<div style="height: 870px; background-color: black; text-align: center;">
+    <div>
+        <h2 class="welcome">Welcome</h2>
+        <h1 id="userWelcome">{{loggedInUser.lastName + " " + loggedInUser.firstName}}</h1>
+    </div>
+    <div class="planetBlock" routerLink='/vendor-list'>
+        <div class="blockLogo"></div>
+        <h1 class="blockLogoName">Planets</h1>
+    </div>
+    <div class="productBlock" routerLink='/product-list'>
+        <div class="productLogo"></div>
+        <h1 class="blockLogoName">Products</h1>
+    </div>
 </div>
 <div style="height: 870px; background-color: whitesmoke;">
 </div>

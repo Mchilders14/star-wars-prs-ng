@@ -1,0 +1,54 @@
+.welcome{ 
+    margin-top: 50px;
+    padding-top: 50px;
+    color: gold;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+#userWelcome{ 
+    color: whitesmoke;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.planetBlock{
+    width: 450px;
+    height: 450px;
+    display: inline-block;
+    background-color: #454545;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin:100px;
+    border-radius: 20px;
+}
+.productBlock{
+    width: 450px;
+    height: 450px;
+    display: inline-block;
+    background-color: #454545;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin:100px;
+    border-radius: 20px;
+}
+.blockLogo{
+    width: 375px;
+    height: 375px;
+    background-image: url('/assets/plant.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-left: 40px;
+}
+.productLogo{
+    width: 375px;
+    height: 375px;
+    background-image: url('/assets/saber.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-left: 40px;
+}
+.blockLogoName{ 
+    padding-top: 10px;
+    color: gold;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}

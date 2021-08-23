@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { User } from 'src/app/model/user.class';
 import { SystemService } from 'src/app/service/system.service';
 
 @Component({
@@ -7,13 +8,16 @@ import { SystemService } from 'src/app/service/system.service';
   styleUrls: ['./home-page.component.css']
 })
 export class HomePageComponent implements OnInit {
+  loggedInUser: User = new User();
+
 
   constructor(
     private systemService: SystemService
   ) { }
 
   ngOnInit(): void {
-    this.systemService.checkLogin();
+    //this.systemService.checkLogin();
+    this.loggedInUser = this.systemService.loggedInUser;
   }
 
 }
