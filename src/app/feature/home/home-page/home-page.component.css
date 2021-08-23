@@ -52,6 +52,47 @@
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
 }
+.quote{
+    color: gold;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+    font-style: italic;
+}
+.request{ 
+    padding-top: 30px;
+    font-weight: bolder;
+    color: black;
+    font-style: italic;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.requestFoot{ 
+    font-weight: bolder;
+    color: black;
+    font-style: italic;
+    font-size: large;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.requestImg{
+    background-image: url('/assets/solo.jpg');
+    opacity: 0.2;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 650px;
+    margin-top: 50px;
+}
+.requestIcon{
+    width: 75px;
+    height: 75px;
+    opacity: 0.6;
+    margin-left: 150px;
+    margin-right: 150px;
+    background-size: 100%;
+    background-color: gray;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+}
 @media only screen and (max-width: 1300px) {
     .planetBlock{
         width: 300px;
