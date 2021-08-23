@@ -12,7 +12,7 @@
           Planet of Origin:
         </td>
         <td>
-          <select [(ngModel)]="product.vendor" class="rounded" [compareWith]="compVendor">
+          <select [(ngModel)]="product.vendor" class="rounded">
             <option *ngFor='let vendor of vendors' [ngValue]='vendor'>{{vendor.name}}</option>
           </select>
         </td>
