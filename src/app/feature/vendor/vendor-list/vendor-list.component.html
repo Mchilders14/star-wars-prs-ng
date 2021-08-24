@@ -1,10 +1,12 @@
 <app-menu></app-menu>
 <div style="background-image: url(assets/background.jpg);">
-<section class="heading"><span class="page-title font-weight-bold font-italic">| List of Planets | 
-    <a routerLink='/vendor-create'>
-        <img width='20' height='20' src='assets/add-icon.png' title='Add New'>
-    </a></span>
-    </section>
+<section class="heading">
+    <span class="page-title font-weight-bold font-italic">| List of Planets | 
+        <a *ngIf="loggedInUser.admin == true" routerLink='/vendor-create'>
+            <img width='20' height='20' src='assets/add-icon.png' title='Add New'>
+        </a>
+    </span>
+</section>
 <table class="table table-sm">
     <thead>
         <tr>
@@ -28,10 +30,13 @@
             <td>
                 <a routerLink='/vendor-detail/{{vendor.id}}'>
                     <img width='20' height='20' src='assets/details.png' title='Planet Details'>
-                </a> | 
-                <a routerLink='/vendor-edit/{{vendor.id}}'>
-                    <img width='20' height='20' src='assets/pencil-icon.png' title='Planet Edit'>
                 </a>
+                <span *ngIf="loggedInUser.admin == true">
+                    |
+                    <a routerLink='/vendor-edit/{{vendor.id}}'>
+                        <img width='20' height='20' src='assets/pencil-icon.png' title='Planet Edit'>
+                    </a>
+                </span>
             </td>
         </tr>
     </tbody>

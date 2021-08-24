@@ -33,13 +33,17 @@
         <td>
             <a routerLink='/request-detail/{{request.id}}'>
                 <img width='20' height='20' src='assets/details.png' title='Request Details'>
-            </a> | 
-            <a routerLink='/request-edit/{{request.id}}'>
-                <img width='20' height='20' src='assets/pencil-icon.png' title='Edit Request'>
-            </a> |
-            <a routerLink='/request-lines/{{request.id}}'>
-                <img width='20' height='20' src='../../../../assets/lines.png' title='Items on Request'>    
             </a>
+            <span *ngIf="loggedInUser.admin == true || loggedInUser.id == request.user.id">
+                |
+                <a routerLink='/request-edit/{{request.id}}'>
+                    <img width='20' height='20' src='assets/pencil-icon.png' title='Request Edit'>
+                </a>
+                |
+                <a routerLink='/request-lines/{{request.id}}'>
+                    <img width='20' height='20' src='../../../../assets/lines.png' title='Items on Request'>    
+                </a>
+            </span>
         </td>
     </tr>
     </tbody>

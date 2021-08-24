@@ -44,5 +44,5 @@
         </tr>    
     </table>
 </main>
-    <span><a routerLink="/request-edit/{{request.id}}" class="btn btn-sm btn-warning">Edit</a></span>
+    <span *ngIf="loggedInUser.admin == true"><a routerLink="/request-edit/{{request.id}}" class="btn btn-sm btn-warning">Edit</a></span>
 </div>

@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Product } from 'src/app/model/product.class';
+import { User } from 'src/app/model/user.class';
 import { ProductService } from 'src/app/service/product.service';
+import { SystemService } from 'src/app/service/system.service';
 
 @Component({
   selector: 'app-product-detail',
@@ -14,14 +16,17 @@ export class ProductDetailComponent implements OnInit {
   product: Product = new Product();
   productId: number = 0;
   submitBtnTitle: string = "Submit";
+  loggedInUser: User = new User();
 
   constructor(
     private productSvc: ProductService,
     private router: Router,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private systemService: SystemService
   ) { }
 
   ngOnInit(): void {
+    this.loggedInUser = this.systemService.loggedInUser;
     this.route.params.subscribe(parms => this.productId = parms["id"]);
     this.productSvc.get(this.productId).subscribe(
       resp => {

@@ -33,6 +33,6 @@
          </table>
     </main>
     <span>
-        <span><a routerLink="/product-edit/{{product.id}}" class="btn btn-sm btn-warning">Edit</a></span>
+        <span *ngIf="loggedInUser.admin == true"><a routerLink="/product-edit/{{product.id}}" class="btn btn-sm btn-warning">Edit</a></span>
     </span>
   </div>

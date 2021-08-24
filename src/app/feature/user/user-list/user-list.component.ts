@@ -11,13 +11,16 @@ import { UserService } from 'src/app/service/user.service';
 export class UserListComponent implements OnInit {
 
   users: User[]= [];
+  loggedInUser: User = new User();
   
   constructor(
     private userSvc: UserService,
-    private sysSvc: SystemService
+    private systemService: SystemService
   ) { }
 
   ngOnInit(): void {
+    this.systemService.checkLogin();
+    this.loggedInUser = this.systemService.loggedInUser;
     this.userSvc.list()
     .subscribe(
       resp => {

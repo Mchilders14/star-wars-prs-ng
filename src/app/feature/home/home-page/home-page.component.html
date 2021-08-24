@@ -1,5 +1,5 @@
 <app-menu style="position: fixed; top: 0; width: 100%;"></app-menu>
-<div style="height: 870px; background-color: black; text-align: center;">
+<div style="height: 920px; background-color: black; text-align: center;">
     <div>
         <h2 class="welcome">Welcome</h2>
         <h1 id="userWelcome">{{loggedInUser.lastName + " " + loggedInUser.firstName}}</h1>
@@ -16,16 +16,18 @@
         <span>- For All Your Galactic Needs!</span>
     </div>
 </div>
-<div style="height: 870px; background-color: whitesmoke; text-align: center;">
+<div style="height: 920px; background-color: whitesmoke; text-align: center;">
     <div class="request">
         <h2>Request a new blaster today!</h2>
     </div>
     <div class="requestImg"></div>
-    <span class="requestFoot">Under 50 Credits Auto-Approved!</span>
-    <img src="/assets/requestIcon.png" routerLink='/request-list' class="requestIcon" alt="">
-    <span class="requestFoot">Please Allow 3 - 4 Galactic Cycles</span>
+    <div class="requestFooter">
+        <span class="requestFoot">Under 50 Credits Auto-Approved!</span>
+        <span routerLink="/request-list" class="button glow-button" target="_blank">Make A Request</span>
+        <span class="requestFoot">Please Allow 3 - 4 Galactic Cycles</span>
+    </div>
 </div>
-<div style="height: 870px; background-color: black;">
+<div style="height: 920px; background-color: black;">
 </div>
-<div style="height: 870px; background-color: whitesmoke;">
+<div style="height: 920px; background-color: whitesmoke;">
 </div>

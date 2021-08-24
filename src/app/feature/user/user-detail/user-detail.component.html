@@ -37,6 +37,6 @@
          </table>
     </main>
     <span>
-        <span><a routerLink="/user-edit/{{user.id}}" class="btn btn-sm btn-warning">Edit</a></span>
+        <span *ngIf="loggedInUser.admin == true"><a routerLink="/user-edit/{{user.id}}" class="btn btn-sm btn-warning">Edit</a></span>
     </span>
   </div>

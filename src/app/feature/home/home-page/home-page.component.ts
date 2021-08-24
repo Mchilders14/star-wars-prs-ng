@@ -16,7 +16,7 @@ export class HomePageComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    //this.systemService.checkLogin();
+    this.systemService.checkLogin();
     this.loggedInUser = this.systemService.loggedInUser;
   }
 
