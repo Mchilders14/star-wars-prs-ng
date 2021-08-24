@@ -1,6 +1,6 @@
 <app-menu></app-menu>
 <span class='component-title'>{{title}}</span>
-<span> | <a routerLink='/request-lines/{{request.id}}'>Return to List </a> </span>
+<span> | <a routerLink='/request-lines/{{lineItem.request.id}}'>Return to List </a> </span>
 <p *ngIf='!lineItem'>Loading...</p>
 <div *ngIf='lineItem'>
   <main class="single">
@@ -11,8 +11,11 @@
           Product:
         </td>
         <td>
-          <select [(ngModel)]="lineItem.product" class="rounded" [compareWith]="compProduct">
-            <option *ngFor='let product of products' [ngValue]='product'>{{product.name}}|{{product.vendor.name}}</option>
+          <select [(ngModel)]="lineItem.product" class="rounded" [compareWith]="compLineItem">
+            <option value="undefined"></option>
+            <option *ngFor='let product of products' [ngValue]='product'>
+              {{product.name}}|{{product.vendor.name}}
+            </option>
           </select>
         </td>
       </tr>

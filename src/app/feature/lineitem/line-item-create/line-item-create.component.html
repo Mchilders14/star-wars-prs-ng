@@ -10,6 +10,7 @@
         </td>
         <td>
           <select [(ngModel)]="lineItem.product" class="rounded">
+            <option value="undefined"></option>
             <option *ngFor='let product of products' [ngValue]='product'>
               {{ product.name + ' | ' + product.vendor.name}}
             </option>

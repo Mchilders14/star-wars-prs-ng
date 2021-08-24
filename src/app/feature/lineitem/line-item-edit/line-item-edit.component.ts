@@ -76,7 +76,7 @@ export class LineItemEditComponent implements OnInit {
 
 
 
-  compProduct(a: Product, b: Product): boolean {
+  compLineItem(a: LineItem, b: LineItem): boolean {
     return a && b && a.id === b.id;
   }
 
