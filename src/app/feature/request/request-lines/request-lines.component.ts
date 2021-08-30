@@ -66,9 +66,6 @@ export class RequestLinesComponent implements OnInit {
       }
     );
   }
-
-
-
   status() {
     this.requestSvc.submit(this.request).subscribe(
       resp => {
